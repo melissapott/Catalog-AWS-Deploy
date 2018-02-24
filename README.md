@@ -83,5 +83,8 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
 </VirtualHost>
 ```
 
-
+## Enable the site
+  - a default site was likely initiated when installing Apache.  It can be disabled by running `sudo a2dissite 000-default`
+  - activate the Catalog website by running `sudo a2ensite catalog`
+  - restart the Apache service by running `sudo service apache2 restart`
 
