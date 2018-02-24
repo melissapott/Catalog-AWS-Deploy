@@ -50,7 +50,7 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
 1. Create the database and database user accounts by running:
   - `sudo -i -u postgres` 
   - `createuser catalog`
-  - 'createdb catalog catalog`
+  - `createdb catalog catalog`
 2. Note: the word "user" is a reserved word in Postgresql, but not in sqLite, where the app was first written, I have opted to change my original use of the word 'user' in table and column names to 'person' in order to avoid problems and confusion.  Therefore, the database_setup.py and catalog.py files should be edited to replace the use of 'user' to 'person' when referencing database tables and fields.
 3. Update the database_setup.py and catalog.py files to reflect the change from sqLite to Postgresql
   - add a line `import psycopg2` to each file
@@ -62,7 +62,7 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
   - enable uploads to the /image directory for a web user by running `sudo chown www-data:www-data /var/www/Catalog/images`
   - ensure that catalog.wsgi file is present in the /var/www/Catalog directory, which should be included in this repository
   - create the host configuration file as /etc/apache2/sites-available/catalog.conf which should contain: 
-  <VirtualHost *:80>
+  `<VirtualHost *:80>
         ServerName 18.217.175.142
         ServerAdmin melissa.pott@gmail.com
         WSGIScriptAlias / /var/www/Catalog/catalog.wsgi
@@ -79,7 +79,7 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-</VirtualHost>
+</VirtualHost>`
 
 
 
