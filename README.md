@@ -62,6 +62,7 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
   - enable uploads to the /image directory for a web user by running `sudo chown www-data:www-data /var/www/Catalog/images`
   - ensure that catalog.wsgi file is present in the /var/www/Catalog directory, which should be included in this repository
   - create the host configuration file as /etc/apache2/sites-available/catalog.conf which should contain: 
+  
   `<VirtualHost *:80>
         ServerName 18.217.175.142
         ServerAdmin melissa.pott@gmail.com
