@@ -63,7 +63,7 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
   - ensure that catalog.wsgi file is present in the /var/www/Catalog directory, which should be included in this repository
   - create the host configuration file as /etc/apache2/sites-available/catalog.conf which should contain: 
   
-  `<VirtualHost *:80>
+  ```<VirtualHost *:80>
         ServerName 18.217.175.142
         ServerAdmin melissa.pott@gmail.com
         WSGIScriptAlias / /var/www/Catalog/catalog.wsgi
@@ -80,7 +80,7 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
         ErrorLog ${APACHE_LOG_DIR}/error.log
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 
-</VirtualHost>`
+</VirtualHost>```
 
 
 
