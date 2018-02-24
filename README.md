@@ -88,3 +88,5 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
   - activate the Catalog website by running `sudo a2ensite catalog`
   - restart the Apache service by running `sudo service apache2 restart`
 
+# Attribution and Third-Party Resources
+In addition to the code libraries listed in the requirements section, this project also relies on the Bootstrap framework and the Google and Facebook API's for login functionality, and may contain some of their boilerplate code.  And because the website construction was part of the Udacity coursework, some of the code was provided by an instructor, where I was tasked with adding additional functionality or adapting the code to different environments.  A big shout-out goes to Steve Wooding (https://gist.github.com/SteveWooding) for his demonstration of the updated formatting for Facebook authorization requests.
