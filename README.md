@@ -90,3 +90,8 @@ Ensure that the timezone is configured for UTC by running dpkyg-reconfigure tzda
 
 # Attribution and Third-Party Resources
 In addition to the code libraries listed in the requirements section, this project also relies on the Bootstrap framework and the Google and Facebook API's for login functionality, and may contain some of their boilerplate code.  And because the website construction was part of the Udacity coursework, some of the code was provided by an instructor, where I was tasked with adding additional functionality or adapting the code to different environments.  A big shout-out goes to Steve Wooding (https://gist.github.com/SteveWooding) for his demonstration of the updated formatting for Facebook authorization requests.
+
+# Notes for project reviewer:
+  - IP Address: 18.217.175.142
+  - SSH port: 2200
+  - URL: http://ec2-18-217-175-142.us-east-2.compute.amazonaws.com/
